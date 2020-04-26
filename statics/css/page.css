@@ -1,0 +1,60 @@
+div.airforce {
+    display: block;
+    text-align: center;
+}
+
+div.geek_header {
+    text-align:center;
+    margin-top: 20px;
+    font-size: xx-large;
+    font-family: 'Merriweather', serif;
+}
+
+div.geek_header img {
+    width: 256px;
+    height: 256px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 256px;
+}
+
+div.geek_nav {
+    text-align:center;
+    margin-top: 20px;
+    font-size: larger;
+    font-family: 'Merriweather', serif;
+}
+
+div.geek_nav a {
+    color: black;
+    margin: 100px auto auto auto;
+    max-width: 500px;
+    padding: 0 20px;
+}
+
+div.geek_intro {
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+div.geek_intro p {
+    margin: 0;
+    padding: 0;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: larger;
+    font-family: 'Merriweather', serif; 
+}
+
+div.geek_footer p{
+    text-align:center;
+    margin-top: 20px;
+    font-size: small;
+    margin-top: 100px;
+    font-family: 'Merriweather', serif;
+}
+

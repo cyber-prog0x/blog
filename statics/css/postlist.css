@@ -1,0 +1,59 @@
+div.geek_body {
+    text-align: center;
+    margin-top: 20px;
+}
+
+div.geek_nav a {
+    font-size: larger;
+    font-family: 'Merriweather', serif; 
+    color: black;
+    margin: 100px auto auto auto;
+    max-width: 500px;
+    padding: 0 10px;
+}
+
+div.geek_shortinfo {
+    color: grey;
+    font-size: medium;
+    font-family: 'Merriweather', serif; 
+    margin-top: 20px;
+    margin-left: 21.5%;
+}
+
+div.geek_postwrapper {
+    margin-top: 36px;
+} 
+
+div.geek_post_class {
+    font-size: large;
+    font-family: 'Merriweather', serif; 
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+div.geek_post_pagination {
+    margin-left: 30%;
+    margin-right: 20%;
+    margin-top: 30px;
+}
+
+div.geek_post_pagination a {
+    font-size: medium;
+    font-family: 'Manrope', sans-serif;
+    /* margin: 100px auto auto auto;
+    max-width: 500px;
+    padding: 0 20px; */
+    color: black;
+    margin-left: 10px;
+}
+
+div.geek_post_class li {
+    margin-top: 5px;
+}
+
+div.geek_footer {
+    text-align:center;
+    font-size: small;
+    margin-top: 100px;
+    font-family: 'Merriweather', serif;
+}
