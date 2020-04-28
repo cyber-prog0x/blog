@@ -2,7 +2,7 @@ package util
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/Unknwon/com"
+	"github.com/unknwon/com"
 
 	"blog/pkg/setting"
 )
