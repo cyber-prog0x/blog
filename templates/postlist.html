@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/assets/css/postlist.css">
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
     <title>Nunu's Daily Life | Article</title>
 </head>
 <body>
@@ -14,7 +14,7 @@
         <div class="geek_nav">
             &#x1F344;
             <a href="#">Index</a>
-            <a href="#">Article</a>
+            <a href="/index">Article</a>
             <a href="#">Music</a>
             <a href="#">Project</a>
             <a href="#">Link</a>
@@ -28,11 +28,6 @@
 
     <div class="geek_postwrapper">
         <div class="geek_post_class" id="geek_post">
-            <ol>
-                <li v-for="post in posts">
-                    {{ post.datetime}} — <a :href=getPostUrl()>{{ post.title }}</a>    
-                </li>
-            </ol>
         </div>
 
         <div class="geek_post_pagination">
@@ -45,30 +40,5 @@
     <div class="geek_footer">
         <p>2014-2020 Nunu's Studio. Made with &#x2764;&#xFE0F; in Pure Golang</p>
     </div>
-    <script>
-        var app = new Vue({
-            el: '#geek_post',
-            data: {
-                posts: [
-                    { datetime: '2020/04/24 10:20', title: '我们如何适应这个时代', url: '/How-do-we-adapt-to-these-times'},
-                    { datetime: '2020/04/24 10:20', title: '我们如何适应这个时代', url: '/How-do-we-adapt-to-these-times'},
-                    { datetime: '2020/04/24 10:20', title: '我们如何适应这个时代', url: '/How-do-we-adapt-to-these-times'},
-                    { datetime: '2020/04/24 10:20', title: '我们如何适应这个时代', url: '/How-do-we-adapt-to-these-times'},
-                    { datetime: '2020/04/24 10:20', title: '我们如何适应这个时代', url: '/How-do-we-adapt-to-these-times'},
-                    { datetime: '2020/04/24 10:20', title: '我们如何适应这个时代', url: '/How-do-we-adapt-to-these-times'},
-                    { datetime: '2020/04/24 10:20', title: '我们如何适应这个时代', url: '/How-do-we-adapt-to-these-times'},
-                    { datetime: '2020/04/24 10:20', title: '我们如何适应这个时代', url: '/How-do-we-adapt-to-these-times'},
-                    { datetime: '2020/04/24 10:20', title: '我们如何适应这个时代', url: '/How-do-we-adapt-to-these-times'},
-                    { datetime: '2020/04/24 10:20', title: '我们如何适应这个时代', url: '/How-do-we-adapt-to-these-times'}
-
-                ]
-            },
-            methods: {
-                getPostUrl:function() {
-                    return this.posts.url; 
-                }
-            }
-        })
-    </script>
 </body>
 </html>
