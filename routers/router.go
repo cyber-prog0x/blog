@@ -22,10 +22,10 @@ func InitRouter() *gin.Engine {
 
 	apiIndex := r.Group("/")
 	{
-		apiIndex.GET("/", v1.BioPage)
-		apiIndex.GET("/dash", v1.AdminPannel)
-
-		apiIndex.GET("/index", v1.IndexPage)
+		apiIndex.GET("/", v1.BioHandler)
+		apiIndex.GET("/dash", v1.LoginHandler)
+		apiIndex.GET("/index", v1.IndexHandler)
+		apiIndex.POST("/api/v1/addArticle", v1.AddArticleHandler)
 	}
 
 	apiv1 := r.Group("/api/v1")
