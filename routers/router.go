@@ -25,7 +25,6 @@ func InitRouter() *gin.Engine {
 		apiIndex.GET("/", v1.BioHandler)
 		apiIndex.GET("/dash", v1.LoginHandler)
 		apiIndex.GET("/index", v1.IndexHandler)
-		apiIndex.POST("/api/v1/addArticle", v1.AddArticleHandler)
 	}
 
 	apiv1 := r.Group("/api/v1")
@@ -34,6 +33,10 @@ func InitRouter() *gin.Engine {
 		apiv1.POST("/tags", v1.AddTag)
 		apiv1.PUT("/tags/:id", v1.EditTag)
 		apiv1.DELETE("/tags/:id", v1.DeleteTag)
+
+		apiv1.POST("/add/article", v1.AddArticleHandler)
+		apiv1.GET("/del/article/:id", v1.DeleteArticleHandler)
+
 	}
 
 	return r
