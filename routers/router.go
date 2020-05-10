@@ -20,11 +20,11 @@ func InitRouter() *gin.Engine {
 	r.StaticFile("/favicon.ico", "./statics/img/favicon.ico")
 	r.LoadHTMLGlob("templates/*")
 
-	apiIndex := r.Group("/")
+	index := r.Group("/")
 	{
-		apiIndex.GET("/", v1.BioHandler)
-		apiIndex.GET("/dash", v1.LoginHandler)
-		apiIndex.GET("/index", v1.IndexHandler)
+		index.GET("/", v1.BioHandler)
+		index.GET("/dash", v1.LoginHandler)
+		index.GET("/index", v1.IndexHandler)
 	}
 
 	apiv1 := r.Group("/api/v1")
@@ -37,6 +37,12 @@ func InitRouter() *gin.Engine {
 		apiv1.POST("/add/article", v1.AddArticleHandler)
 		apiv1.GET("/del/article/:id", v1.DeleteArticleHandler)
 
+	}
+
+	dashBoard := r.Group("/dashboard")
+	{
+		dashBoard.GET("/index", v1.DashBoardIndexHandler)
+		dashBoard.GET("/edit", v1.EditHandler)
 	}
 
 	return r

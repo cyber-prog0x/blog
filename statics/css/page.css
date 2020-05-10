@@ -58,3 +58,18 @@ div.geek_footer p{
     font-family: 'Merriweather', serif;
 }
 
+div.basis_editor input {
+    border: 2px solid grey;
+    border-radius: 1px;
+    size: 128;
+    font-size: medium;
+    font-family: 'Merriweather', serif;
+
+}
+
+div.basis_editor p {
+    font-size: medium;
+    font-family: 'Merriweather', serif;
+
+
+}
